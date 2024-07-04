@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="p1">Welcome to jquery</p>
+<p>Welcome to Systech</p>
+
+<input type="button" value="click Here to change the color" id="Btn">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#Btn").click(function(){
+            $("#p1").css("color","Red");
+        })
+    })
+</script>
+<p>Hello</p>
+</body>
+</html>
+
+

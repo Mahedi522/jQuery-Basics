@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery Practice</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            alert("Hello");
+            $("p").click(function (){
+                $(this).hide();
+            });
+            $("h1").click(function(){
+                $(this).hide();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <p>This is a Paragraph</p>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <h1>Click me too!</h1>
+
+
+    <script>
+        <!-- selection by Id -->
+        $(document).ready(function (){
+            $("#Btn").click(function (){
+                $("p").css("font-size", "35px");
+            })
+        })
+
+        <!-- selection by Class -->
+        $(document).ready(function(){
+            $(".c1").click(function(){
+                $(this).css("color","Red")
+            })
+        })
+
+        <!-- selection by Tag -->
+    </script>
+
+    <h2 class="c1"> Ths is a Class</h2>
+
+    <input type="button" value="click here to increase front size to 35px" id = Btn>
+</body>
+</html>
